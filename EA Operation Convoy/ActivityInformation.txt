@@ -1,0 +1,41 @@
+===================================================================
+HOW TO USE?
+===================================================================
+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+Category - Conversion Format
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+ - The format to which the input file that is getting converted to.
+Accepts only drop down values, any manual edit to the property will
+throw a runtime error.
+
+Please visit Office support to check compatibility
+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+Category - Input File path
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+- Protected/Encrypted files will not be converted  - the files
+that are not corrupted and accessible to the bot will be converted.
+
+Formats accepted - *.doc;*.docx;*.rtf;
+
+CAUTION : Conversion Requires the Word Application to be installed in
+the system/VM.
+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+Category - Result/Output
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+Gives a boolean value as to whether the conversion was successful.
+
+This is useful in case you don’t want the workflow to throw any exception
+during runtime, yet want to know the outcome of the conversion whether
+it was a success or failure. (use continue on error scenario)
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+Category - Feature
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+- Use 'Create Directory' to create path if path does not exist,
+- Use 'Overwrite Files' to resolve file conflicts.
