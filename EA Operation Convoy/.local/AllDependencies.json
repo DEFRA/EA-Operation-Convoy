@@ -9846,8 +9846,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "EA Operation Convoy",
-      "projectName": "EA Operation Convoy",
+      "projectUniqueName": "Operation Convoy",
+      "projectName": "Operation Convoy",
       "projectPath": "C:\\Users\\m1011226\\Documents\\GitHub\\EA-Operation-Convoy\\EA Operation Convoy\\.local",
       "packagesPath": "C:\\Users\\m1011226\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\m1011226\\Documents\\GitHub\\EA-Operation-Convoy\\EA Operation Convoy\\.local"

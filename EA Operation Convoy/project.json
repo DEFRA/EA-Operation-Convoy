@@ -1,5 +1,5 @@
 {
-  "name": "EA Operation Convoy",
+  "name": "Operation Convoy",
   "description": "EA Operation Convoy",
   "main": "Main.xaml",
   "dependencies": {
@@ -18,7 +18,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.4.3.0",
-  "projectVersion": "1.0.35",
+  "projectVersion": "1.0.43",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -61,11 +61,8 @@
       "output": []
     }
   ],
-  "isTemplate": true,
-  "templateProjectData": {
-    "defaultProjectDescription": "Attended Development Template",
-    "defaultProjectName": "Attended Dev Template"
-  },
+  "isTemplate": false,
+  "templateProjectData": {},
   "publishData": {},
   "targetFramework": "Legacy"
 }
