@@ -12,7 +12,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1152,827</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1151,827</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Process_Transaction_2_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="49">
@@ -68,7 +68,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="82">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="42">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -110,6 +110,7 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>Pop Ups</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -204,7 +205,7 @@
               <av:PointCollection x:Key="ConnectorLocation">300,309.5 300,359.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Copy Business Information" sap:VirtualizedContainerService.HintSize="1076,4989" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Copy Business Information" sap:VirtualizedContainerService.HintSize="659,2199" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="moiw:ApplicationClass" Name="wordApp" />
               <Variable x:TypeArguments="x:Object" Name="missing" />
@@ -217,7 +218,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Get information from Word Table" sap:VirtualizedContainerService.HintSize="1034,826" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Get information from Word Table" sap:VirtualizedContainerService.HintSize="617,826" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -274,7 +275,7 @@
               </Assign>
               <InvokeMethod DisplayName="Invoke method" sap:VirtualizedContainerService.HintSize="262,134" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Collect" TargetType="s:GC" />
             </Sequence>
-            <Sequence DisplayName="Assign MetaData" sap:VirtualizedContainerService.HintSize="1034,4031" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Assign MetaData" sap:VirtualizedContainerService.HintSize="617,1241" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <Sequence.Variables>
                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumMatches" />
                 <Variable x:TypeArguments="s:String[]" Name="arrMatches" />
@@ -285,14 +286,14 @@
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:Matches BuilderPattern="((OF|OH)([0-9]{7}) R)|((OF|OH)([0-9]{7}) SI)|((OF|OH)([0-9]{7}) SN)" DisplayName="Pull Application Reference" sap:VirtualizedContainerService.HintSize="992,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[strWordDoc]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;((OF|OH)([0-9]{7}) R)|((OF|OH)([0-9]{7}) SI)|((OF|OH)([0-9]{7}) SN)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="((OF|OH)([0-9]{7}) R)|((OF|OH)([0-9]{7}) SI)|((OF|OH)([0-9]{7}) SN)" RegexOption="IgnoreCase, Compiled" Result="[enumMatches]">
+              <ui:Matches BuilderPattern="((OF|OH)([0-9]{7}) R)|((OF|OH)([0-9]{7}) SI)|((OF|OH)([0-9]{7}) SN)" DisplayName="Pull Application Reference" sap:VirtualizedContainerService.HintSize="575,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[strWordDoc]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;((OF|OH)([0-9]{7}) R)|((OF|OH)([0-9]{7}) SI)|((OF|OH)([0-9]{7}) SN)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="((OF|OH)([0-9]{7}) R)|((OF|OH)([0-9]{7}) SI)|((OF|OH)([0-9]{7}) SN)" RegexOption="IgnoreCase, Compiled" Result="[enumMatches]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Matches>
-              <Assign sap:VirtualizedContainerService.HintSize="992,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+              <Assign sap:VirtualizedContainerService.HintSize="575,60" sap2010:WorkflowViewState.IdRef="Assign_9">
                 <Assign.To>
                   <OutArgument x:TypeArguments="s:String[]">[arrMatches]</OutArgument>
                 </Assign.To>
@@ -300,336 +301,82 @@
                   <InArgument x:TypeArguments="s:String[]">[enumMatches.OfType(Of Match).Select(Function(m) m.Value.ToString).ToArray]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:BuildDataTable DataTable="[dtApplications]" DisplayName="Build Data Table - Application MetaData" sap:VirtualizedContainerService.HintSize="992,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Application_x0020_Reference&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Business_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;First_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;PostCode&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
-              <ui:BuildDataTable DataTable="[dtMetaDataErrors]" DisplayName="Build Data Table - MetaData Errors" sap:VirtualizedContainerService.HintSize="992,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_6" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Application_x0020_Reference&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Error_x0020_Message&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
-              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each Application Regerence" sap:VirtualizedContainerService.HintSize="992,3467" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[arrMatches]">
+              <ui:BuildDataTable DataTable="[dtApplications]" DisplayName="Build Data Table - Application MetaData" sap:VirtualizedContainerService.HintSize="575,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Application_x0020_Reference&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Business_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;First_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;PostCode&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+              <ui:BuildDataTable DataTable="[dtMetaDataErrors]" DisplayName="Build Data Table - MetaData Errors" sap:VirtualizedContainerService.HintSize="575,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_6" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Application_x0020_Reference&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Error_x0020_Message&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each Application Regerence" sap:VirtualizedContainerService.HintSize="575,677" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[arrMatches]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:String">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:String" Name="item" />
                     </ActivityAction.Argument>
-                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="956,3343" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                    <Sequence sap:VirtualizedContainerService.HintSize="539,553" sap2010:WorkflowViewState.IdRef="Sequence_178">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="strApplicationChar" />
+                        <Variable x:TypeArguments="x:Int32" Name="n" />
+                      </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <TryCatch.Try>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="918,3116" sap2010:WorkflowViewState.IdRef="Sequence_20">
-                          <Sequence.Variables>
-                            <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumData" />
-                            <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumPostCode" />
-                            <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumFirstName" />
-                            <Variable x:TypeArguments="x:String" Name="strData" />
-                            <Variable x:TypeArguments="x:String" Name="strApplicationRef" />
-                            <Variable x:TypeArguments="s:String[]" Name="arrPostCode" />
-                            <Variable x:TypeArguments="x:String" Name="strPattern" />
-                            <Variable x:TypeArguments="x:String" Name="myMatch" />
-                            <Variable x:TypeArguments="x:String" Name="strBusinessName" />
-                            <Variable x:TypeArguments="x:String" Name="strPostCode" />
-                            <Variable x:TypeArguments="x:String" Name="strFirstName" />
-                            <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumBusinessName" />
-                            <Variable x:TypeArguments="s:String[]" Name="arrBusinssName" />
-                            <Variable x:TypeArguments="x:String" Name="strFirstName1" />
-                            <Variable x:TypeArguments="x:String" Name="strFirstName2" />
-                            <Variable x:TypeArguments="x:String" Name="strAltComp" />
-                          </Sequence.Variables>
+                      <Assign sap:VirtualizedContainerService.HintSize="497,60" sap2010:WorkflowViewState.IdRef="Assign_179">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[n]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">2</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="497,60" sap2010:WorkflowViewState.IdRef="Assign_178">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[strApplicationChar]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[item.Substring(0,n)]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="497,61" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[strApplicationChar]" />
+                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[strApplicationChar]" sap:VirtualizedContainerService.HintSize="497,160" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <TryCatch x:Key="OF" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,287" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_20">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[strApplicationRef]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[item.ToString]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_21">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[strWordDoc]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[strWordDoc.Replace(environment.NewLine," ")]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <ui:Matches BuilderPattern="" DisplayName="Pull Data" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_8" Input="[strWordDoc]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(&quot; + item + &quot;).*?(OF[0-9]{7})&quot;]" RegexOption="IgnoreCase, Compiled" Result="[enumData]">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </ui:Matches>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="876,287" sap2010:WorkflowViewState.IdRef="TryCatch_1">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <TryCatch.Try>
-                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_22">
-                                <Assign.To>
-                                  <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
-                                </Assign.To>
-                                <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
-                                </Assign.Value>
-                              </Assign>
-                            </TryCatch.Try>
-                            <TryCatch.Catches>
-                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ActivityAction x:TypeArguments="s:Exception">
-                                  <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                  </ActivityAction.Argument>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_19">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <ui:Matches BuilderPattern="" DisplayName="Pull Data" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_9" Input="[strWordDoc]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(&quot; + item + &quot;).*?(OF[0-9]{7}|Authorisation|Manager)&quot;]" RegexOption="IgnoreCase, Compiled" Result="[enumData]" />
-                                    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_23">
-                                      <Assign.To>
-                                        <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
-                                      </Assign.To>
-                                      <Assign.Value>
-                                        <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
-                                      </Assign.Value>
-                                    </Assign>
-                                  </Sequence>
-                                </ActivityAction>
-                              </Catch>
-                            </TryCatch.Catches>
-                          </TryCatch>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="876,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                            <ui:CommentOut.Body>
-                              <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_175">
-                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="791,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[strData]" />
-                              </Sequence>
-                            </ui:CommentOut.Body>
-                          </ui:CommentOut>
-                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="876,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[strData]" />
-                          <ui:Matches BuilderPattern="(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(Director)|(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(-)" DisplayName="Assign MetaData - First Name" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_10" Input="[strData]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(Director)|(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(-)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(Director)|(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(-)" RegexOption="IgnoreCase, Compiled" Result="[enumFirstName]">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </ui:Matches>
-                          <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_24">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[enumFirstName(0).value]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_25">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[strBusinessName.Replace(item,"")]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_152">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[strBusinessName.Replace("-","")]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <If Condition="[strBusinessName.Contains(&quot;Director&quot;)]" sap:VirtualizedContainerService.HintSize="876,810" sap2010:WorkflowViewState.IdRef="If_21">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <If.Then>
-                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_145">
-                                <Assign.To>
-                                  <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
-                                </Assign.To>
-                                <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">[strBusinessName.Replace("Director","").Trim]</InArgument>
-                                </Assign.Value>
-                              </Assign>
-                            </If.Then>
-                            <If.Else>
-                              <Sequence sap:VirtualizedContainerService.HintSize="304,652" sap2010:WorkflowViewState.IdRef="Sequence_177">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_148">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[strBusinessName.Replace(environment.NewLine,"").Replace("-","")]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_153">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(strBusinessName,"\u000b\r"," ")]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_154">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[strBusinessName.Replace(environment.NewLine, String.Empty)]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_149">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[strFirstName1]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[strBusinessName.Split(" "c)(0)]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_150">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[strFirstName2]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[strBusinessName.Split(" "c)(1)]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_151">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[strFirstName1 + " " + strFirstName2]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                              </Sequence>
-                            </If.Else>
-                          </If>
-                          <If Condition="[strBusinessName.ToLower.Contains(&quot;ltd&quot;)]" sap:VirtualizedContainerService.HintSize="876,376" sap2010:WorkflowViewState.IdRef="If_20">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <If.Then>
-                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_146">
-                                <Assign.To>
-                                  <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
-                                </Assign.To>
-                                <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">[strBusinessName.ToLower.Replace("ltd","")]</InArgument>
-                                </Assign.Value>
-                              </Assign>
-                            </If.Then>
-                            <If.Else>
-                              <If Condition="[strBusinessName.ToLower.Contains(&quot;limited&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_19">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <If.Then>
-                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_147">
-                                    <Assign.To>
-                                      <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
-                                    </Assign.To>
-                                    <Assign.Value>
-                                      <InArgument x:TypeArguments="x:String">[strBusinessName.ToLower.Replace("limited","")]</InArgument>
-                                    </Assign.Value>
-                                  </Assign>
-                                </If.Then>
-                                <If.Else>
-                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_155">
-                                    <Assign.To>
-                                      <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
-                                    </Assign.To>
-                                    <Assign.Value>
-                                      <InArgument x:TypeArguments="x:String">[strBusinessName]</InArgument>
-                                    </Assign.Value>
-                                  </Assign>
-                                </If.Else>
-                              </If>
-                            </If.Else>
-                          </If>
-                          <ui:Matches BuilderPattern="(?=Operating Centre).*(Authorisation)" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_11" Input="[strData]" IsBuilderTabModified="False" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?=Operating Centre).*(Authorisation)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?=Operating Centre).*(Authorisation)" RegexOption="IgnoreCase, Compiled" Result="[enumData]">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </ui:Matches>
-                          <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_28">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <ui:Matches BuilderPattern="([A-Z][A-HJ-Y]?\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})" DisplayName="Assign MetaData - Postcode" sap:VirtualizedContainerService.HintSize="876,51" sap2010:WorkflowViewState.IdRef="Matches_12" Input="[strData]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;([A-Z][A-HJ-Y]?\\d[A-Z\\d]? ?\\d[A-Z]{2}|GIR ?0A{2})&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="([A-Z][A-HJ-Y]?\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})" RegexOption="IgnoreCase, Compiled" Result="[enumPostCode]" />
-                          <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_29">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="s:String[]">[arrPostCode]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="s:String[]">[enumPostCode.OfType(Of Match).Select(Function(m) m.Value.ToString).ToArray]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_30">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[strPostCode]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[String.Join(",",arrPostCode.Select(Function(x) x.ToString)).Replace("""","")]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strApplicationRef,strBusinessName,strFirstName,strPostCode}]" DataTable="[dtApplications]" DisplayName="Add Data Row - Application MetaData" sap:VirtualizedContainerService.HintSize="791,51" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
-                        </Sequence>
-                      </TryCatch.Try>
-                      <TryCatch.Catches>
-                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="837,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ActivityAction x:TypeArguments="s:Exception">
-                            <ActivityAction.Argument>
-                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                            </ActivityAction.Argument>
-                            <Sequence sap:VirtualizedContainerService.HintSize="476,805" sap2010:WorkflowViewState.IdRef="Sequence_104">
+                          <TryCatch.Try>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_20">
                               <Sequence.Variables>
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumData" />
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumPostCode" />
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumFirstName" />
+                                <Variable x:TypeArguments="x:String" Name="strData" />
                                 <Variable x:TypeArguments="x:String" Name="strApplicationRef" />
-                                <Variable x:TypeArguments="x:String" Name="strErrorMessage" />
+                                <Variable x:TypeArguments="s:String[]" Name="arrPostCode" />
+                                <Variable x:TypeArguments="x:String" Name="strPattern" />
+                                <Variable x:TypeArguments="x:String" Name="myMatch" />
+                                <Variable x:TypeArguments="x:String" Name="strBusinessName" />
+                                <Variable x:TypeArguments="x:String" Name="strPostCode" />
+                                <Variable x:TypeArguments="x:String" Name="strFirstName" />
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumBusinessName" />
+                                <Variable x:TypeArguments="s:String[]" Name="arrBusinssName" />
+                                <Variable x:TypeArguments="x:String" Name="strFirstName1" />
+                                <Variable x:TypeArguments="x:String" Name="strFirstName2" />
+                                <Variable x:TypeArguments="x:String" Name="strAltComp" />
                               </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_85">
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_20">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[strApplicationRef]</OutArgument>
                                 </Assign.To>
@@ -637,43 +384,700 @@
                                   <InArgument x:TypeArguments="x:String">[item.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_86">
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_21">
                                 <Assign.To>
-                                  <OutArgument x:TypeArguments="x:String">[strErrorMessage]</OutArgument>
+                                  <OutArgument x:TypeArguments="x:String">[strWordDoc]</OutArgument>
                                 </Assign.To>
                                 <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">["Unable to Pull Metadata - Please complete Manual Search"]</InArgument>
+                                  <InArgument x:TypeArguments="x:String">[strWordDoc.Replace(environment.NewLine," ")]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strApplicationRef,strErrorMessage}]" DataTable="[dtMetaDataErrors]" DisplayName="Add Data Row - Error MetaData" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="AddDataRow_17" />
-                              <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_16" InstanceCachePeriod="3000" WorkbookPath="[IN_FolderPath + io_Config(&quot;Results SpreadSheet&quot;).ToString + &quot;.xlsx&quot;]">
-                                <ui:ExcelApplicationScope.Body>
-                                  <ActivityAction x:TypeArguments="ui:WorkbookApplication">
-                                    <ActivityAction.Argument>
-                                      <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
-                                    </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_103">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ui:ExcelAppendRange DataTable="[dtMetaDataErrors]" DisplayName="Append Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelAppendRange_16" SheetName="MetaData Errors" />
-                                    </Sequence>
-                                  </ActivityAction>
-                                </ui:ExcelApplicationScope.Body>
+                              <ui:Matches BuilderPattern="" DisplayName="Pull Data" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_8" Input="[strWordDoc]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(&quot; + item + &quot;).*?(OF[0-9]{7})&quot;]" RegexOption="IgnoreCase, Compiled" Result="[enumData]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Matches>
+                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="876,287" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                              </ui:ExcelApplicationScope>
+                                <TryCatch.Try>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </TryCatch.Try>
+                                <TryCatch.Catches>
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ActivityAction x:TypeArguments="s:Exception">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Matches BuilderPattern="" DisplayName="Pull Data" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_9" Input="[strWordDoc]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(&quot; + item + &quot;).*?(OF[0-9]{7}|Authorisation|Manager)&quot;]" RegexOption="IgnoreCase, Compiled" Result="[enumData]" />
+                                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </Catch>
+                                </TryCatch.Catches>
+                              </TryCatch>
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="876,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_175">
+                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="791,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[strData]" />
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                              </ui:CommentOut>
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="876,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[strData]" />
+                              <ui:Matches BuilderPattern="(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(Director)|(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(-)" DisplayName="Assign MetaData - First Name" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_10" Input="[strData]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(Director)|(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(-)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(Director)|(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(-)" RegexOption="IgnoreCase, Compiled" Result="[enumFirstName]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Matches>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[enumFirstName(0).value]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_25">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[strBusinessName.Replace(item,"")]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_152">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[strBusinessName.Replace("-","")]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <If Condition="[strBusinessName.Contains(&quot;Director&quot;)]" sap:VirtualizedContainerService.HintSize="876,810" sap2010:WorkflowViewState.IdRef="If_21">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_145">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[strBusinessName.Replace("Director","").Trim]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="304,652" sap2010:WorkflowViewState.IdRef="Sequence_177">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_148">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[strBusinessName.Replace(environment.NewLine,"").Replace("-","")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_153">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(strBusinessName,"\u000b\r"," ")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_154">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[strBusinessName.Replace(environment.NewLine, String.Empty)]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_149">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strFirstName1]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[strBusinessName.Split(" "c)(0)]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_150">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strFirstName2]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[strBusinessName.Split(" "c)(1)]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_151">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[strFirstName1 + " " + strFirstName2]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                              <If Condition="[strBusinessName.ToLower.Contains(&quot;ltd&quot;)]" sap:VirtualizedContainerService.HintSize="876,376" sap2010:WorkflowViewState.IdRef="If_20">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_146">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[strBusinessName.ToLower.Replace("ltd","")]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </If.Then>
+                                <If.Else>
+                                  <If Condition="[strBusinessName.ToLower.Contains(&quot;limited&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_19">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_147">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[strBusinessName.ToLower.Replace("limited","")]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_155">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[strBusinessName]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </If.Else>
+                                  </If>
+                                </If.Else>
+                              </If>
+                              <ui:Matches BuilderPattern="(?=Operating Centre).*(Authorisation)" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_11" Input="[strData]" IsBuilderTabModified="False" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?=Operating Centre).*(Authorisation)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?=Operating Centre).*(Authorisation)" RegexOption="IgnoreCase, Compiled" Result="[enumData]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Matches>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:Matches BuilderPattern="([A-Z][A-HJ-Y]?\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})" DisplayName="Assign MetaData - Postcode" sap:VirtualizedContainerService.HintSize="876,51" sap2010:WorkflowViewState.IdRef="Matches_12" Input="[strData]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;([A-Z][A-HJ-Y]?\\d[A-Z\\d]? ?\\d[A-Z]{2}|GIR ?0A{2})&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="([A-Z][A-HJ-Y]?\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})" RegexOption="IgnoreCase, Compiled" Result="[enumPostCode]" />
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="s:String[]">[arrPostCode]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="s:String[]">[enumPostCode.OfType(Of Match).Select(Function(m) m.Value.ToString).ToArray]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_30">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strPostCode]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[String.Join(",",arrPostCode.Select(Function(x) x.ToString)).Replace("""","")]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strApplicationRef,strBusinessName,strFirstName,strPostCode}]" DataTable="[dtApplications]" DisplayName="Add Data Row - Application MetaData" sap:VirtualizedContainerService.HintSize="791,51" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
                             </Sequence>
-                          </ActivityAction>
-                        </Catch>
-                      </TryCatch.Catches>
-                    </TryCatch>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                                <Sequence sap:VirtualizedContainerService.HintSize="476,805" sap2010:WorkflowViewState.IdRef="Sequence_104">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strApplicationRef" />
+                                    <Variable x:TypeArguments="x:String" Name="strErrorMessage" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_85">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strApplicationRef]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[item.ToString]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_86">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strErrorMessage]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">["Unable to Pull Metadata - Please complete Manual Search"]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strApplicationRef,strErrorMessage}]" DataTable="[dtMetaDataErrors]" DisplayName="Add Data Row - Error MetaData" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="AddDataRow_17" />
+                                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_16" InstanceCachePeriod="3000" WorkbookPath="[IN_FolderPath + io_Config(&quot;Results SpreadSheet&quot;).ToString + &quot;.xlsx&quot;]">
+                                    <ui:ExcelApplicationScope.Body>
+                                      <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_103">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:ExcelAppendRange DataTable="[dtMetaDataErrors]" DisplayName="Append Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelAppendRange_16" SheetName="MetaData Errors" />
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ui:ExcelApplicationScope.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:ExcelApplicationScope>
+                                </Sequence>
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                        </TryCatch>
+                        <TryCatch x:Key="OH" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <TryCatch.Try>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_182">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumData" />
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumPostCode" />
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumFirstName" />
+                                <Variable x:TypeArguments="x:String" Name="strData" />
+                                <Variable x:TypeArguments="x:String" Name="strApplicationRef" />
+                                <Variable x:TypeArguments="s:String[]" Name="arrPostCode" />
+                                <Variable x:TypeArguments="x:String" Name="strPattern" />
+                                <Variable x:TypeArguments="x:String" Name="myMatch" />
+                                <Variable x:TypeArguments="x:String" Name="strBusinessName" />
+                                <Variable x:TypeArguments="x:String" Name="strPostCode" />
+                                <Variable x:TypeArguments="x:String" Name="strFirstName" />
+                                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumBusinessName" />
+                                <Variable x:TypeArguments="s:String[]" Name="arrBusinssName" />
+                                <Variable x:TypeArguments="x:String" Name="strFirstName1" />
+                                <Variable x:TypeArguments="x:String" Name="strFirstName2" />
+                                <Variable x:TypeArguments="x:String" Name="strAltComp" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_156">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strApplicationRef]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[item.ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_157">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strWordDoc]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[strWordDoc.Replace(environment.NewLine," ")]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:Matches BuilderPattern="" DisplayName="Pull Data" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_13" Input="[strWordDoc]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(&quot; + item + &quot;).*?(OF[0-9]{7})&quot;]" RegexOption="IgnoreCase, Compiled" Result="[enumData]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Matches>
+                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="876,287" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <TryCatch.Try>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_158">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </TryCatch.Try>
+                                <TryCatch.Catches>
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ActivityAction x:TypeArguments="s:Exception">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_179">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Matches BuilderPattern="" DisplayName="Pull Data" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="Matches_14" Input="[strWordDoc]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(&quot; + item + &quot;).*?(OF[0-9]{7}|Authorisation|Manager)&quot;]" RegexOption="IgnoreCase, Compiled" Result="[enumData]" />
+                                        <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_159">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </Catch>
+                                </TryCatch.Catches>
+                              </TryCatch>
+                              <ui:Matches BuilderPattern="(?=((OH)([0-9]{7}) R-)|((OH)([0-9]{7}) SI-)|((OH)([0-9]{7}) SN-)).*(Director)|(?=((OH)([0-9]{7}) R-)|((OH)([0-9]{7}) SI-)|((OH)([0-9]{7}) SN-)).*(-)" DisplayName="Assign MetaData - First Name" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_15" Input="[strData]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?=((OH)([0-9]{7}) R-)|((OH)([0-9]{7}) SI-)|((OH)([0-9]{7}) SN-)).*(Director)|(?=((OH)([0-9]{7}) R-)|((OH)([0-9]{7}) SI-)|((OH)([0-9]{7}) SN-)).*(-)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?=((OH)([0-9]{7}) R-)|((OH)([0-9]{7}) SI-)|((OH)([0-9]{7}) SN-)).*(Director)|(?=((OH)([0-9]{7}) R-)|((OH)([0-9]{7}) SI-)|((OH)([0-9]{7}) SN-)).*(-)" RegexOption="IgnoreCase, Compiled" Result="[enumFirstName]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Matches>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_160">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[enumFirstName(0).value]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_161">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[strBusinessName.Replace(item,"")]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_162">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[strBusinessName.Replace("-","")]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <If Condition="[strBusinessName.Contains(&quot;Director&quot;)]" sap:VirtualizedContainerService.HintSize="876,810" sap2010:WorkflowViewState.IdRef="If_22">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_163">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[strBusinessName.Replace("Director","").Trim]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="304,652" sap2010:WorkflowViewState.IdRef="Sequence_181">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_164">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[strBusinessName.Replace(environment.NewLine,"").Replace("-","")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_165">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(strBusinessName,"\u000b\r"," ")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_166">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strBusinessName]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[strBusinessName.Replace(environment.NewLine, String.Empty)]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_167">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strFirstName1]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[strBusinessName.Split(" "c)(0)]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_168">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strFirstName2]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[strBusinessName.Split(" "c)(1)]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_169">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[strFirstName1 + " " + strFirstName2]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                              <If Condition="[strBusinessName.ToLower.Contains(&quot;ltd&quot;)]" sap:VirtualizedContainerService.HintSize="876,376" sap2010:WorkflowViewState.IdRef="If_24">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_170">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[strBusinessName.ToLower.Replace("ltd","")]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </If.Then>
+                                <If.Else>
+                                  <If Condition="[strBusinessName.ToLower.Contains(&quot;limited&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_23">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_171">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[strBusinessName.ToLower.Replace("limited","")]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_172">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[strFirstName]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[strBusinessName]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </If.Else>
+                                  </If>
+                                </If.Else>
+                              </If>
+                              <ui:Matches BuilderPattern="(?=Operating Centre).*(Authorisation)" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_16" Input="[strData]" IsBuilderTabModified="False" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?=Operating Centre).*(Authorisation)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?=Operating Centre).*(Authorisation)" RegexOption="IgnoreCase, Compiled" Result="[enumData]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Matches>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_173">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:Matches BuilderPattern="([A-Z][A-HJ-Y]?\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})" DisplayName="Assign MetaData - Postcode" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_17" Input="[strData]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;([A-Z][A-HJ-Y]?\\d[A-Z\\d]? ?\\d[A-Z]{2}|GIR ?0A{2})&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="([A-Z][A-HJ-Y]?\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})" RegexOption="IgnoreCase, Compiled" Result="[enumPostCode]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Matches>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_174">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="s:String[]">[arrPostCode]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="s:String[]">[enumPostCode.OfType(Of Match).Select(Function(m) m.Value.ToString).ToArray]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_175">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strPostCode]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[String.Join(",",arrPostCode.Select(Function(x) x.ToString)).Replace("""","")]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strApplicationRef,strBusinessName,strFirstName,strPostCode}]" DataTable="[dtApplications]" DisplayName="Add Data Row - Application MetaData" sap:VirtualizedContainerService.HintSize="876,51" sap2010:WorkflowViewState.IdRef="AddDataRow_30" />
+                            </Sequence>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_13">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,434" sap2010:WorkflowViewState.IdRef="Sequence_184">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strApplicationRef" />
+                                    <Variable x:TypeArguments="x:String" Name="strErrorMessage" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_176">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strApplicationRef]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[item.ToString]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_177">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strErrorMessage]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">["Unable to Pull Metadata - Please complete Manual Search"]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strApplicationRef,strErrorMessage}]" DataTable="[dtMetaDataErrors]" DisplayName="Add Data Row - Error MetaData" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="AddDataRow_31" />
+                                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_25" InstanceCachePeriod="3000" WorkbookPath="[IN_FolderPath + io_Config(&quot;Results SpreadSheet&quot;).ToString + &quot;.xlsx&quot;]">
+                                    <ui:ExcelApplicationScope.Body>
+                                      <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_183">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:ExcelAppendRange DataTable="[dtMetaDataErrors]" DisplayName="Append Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelAppendRange_25" SheetName="MetaData Errors" />
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ui:ExcelApplicationScope.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:ExcelApplicationScope>
+                                </Sequence>
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                        </TryCatch>
+                      </Switch>
+                    </Sequence>
                   </ActivityAction>
                 </ui:ForEach.Body>
                 <sap:WorkflowViewStateService.ViewState>
@@ -683,7 +1087,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEach>
-              <ui:RemoveDataRow Row="{x:Null}" DataTable="[dtApplications]" DisplayName="Remove line 0" sap:VirtualizedContainerService.HintSize="907,51" sap2010:WorkflowViewState.IdRef="RemoveDataRow_1" RowIndex="0" />
+              <ui:RemoveDataRow Row="{x:Null}" DataTable="[dtApplications]" DisplayName="Remove line 0" sap:VirtualizedContainerService.HintSize="575,51" sap2010:WorkflowViewState.IdRef="RemoveDataRow_1" RowIndex="0" />
             </Sequence>
           </Sequence>
           <FlowStep.Next>
@@ -724,7 +1128,7 @@
                             <av:PointCollection x:Key="ConnectorLocation">300,178.5 300,243.5</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <TryCatch DisplayName="Search Public Register (Name First)" sap:VirtualizedContainerService.HintSize="1107,3753" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                        <TryCatch DisplayName="Search Public Register (Name First)" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                           <TryCatch.Try>
                             <Sequence DisplayName="Search Publiuc Register (Name First)" sap:VirtualizedContainerService.HintSize="1069,3526" sap2010:WorkflowViewState.IdRef="Sequence_70">
                               <Sequence.Variables>
