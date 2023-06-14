@@ -5,6 +5,7 @@
   "dependencies": {
     "Logging": "[1.0.10]",
     "Pop.Ups": "[1.0.3]",
+    "UiPath.AmazonWebServices.Activities": "[2.4.0]",
     "UiPath.Excel.Activities": "[2.12.3]",
     "UiPath.Form.Activities": "[1.8.0]",
     "UiPath.FormActivityLibrary": "[1.8.0]",
@@ -18,7 +19,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.4.3.0",
-  "projectVersion": "1.0.55",
+  "projectVersion": "1.0.57",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
