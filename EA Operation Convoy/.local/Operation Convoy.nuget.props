@@ -14,5 +14,11 @@
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\m1011226\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\m1011226\.nuget\packages\awssdk.core\3.7.3.8</PkgAWSSDK_Core>
+    <PkgAWSSDK_SimpleSystemsManagement Condition=" '$(PkgAWSSDK_SimpleSystemsManagement)' == '' ">C:\Users\m1011226\.nuget\packages\awssdk.simplesystemsmanagement\3.7.5.14</PkgAWSSDK_SimpleSystemsManagement>
+    <PkgAWSSDK_S3 Condition=" '$(PkgAWSSDK_S3)' == '' ">C:\Users\m1011226\.nuget\packages\awssdk.s3\3.7.3.1</PkgAWSSDK_S3>
+    <PkgAWSSDK_IdentityManagement Condition=" '$(PkgAWSSDK_IdentityManagement)' == '' ">C:\Users\m1011226\.nuget\packages\awssdk.identitymanagement\3.7.2.48</PkgAWSSDK_IdentityManagement>
+    <PkgAWSSDK_EC2 Condition=" '$(PkgAWSSDK_EC2)' == '' ">C:\Users\m1011226\.nuget\packages\awssdk.ec2\3.7.28.3</PkgAWSSDK_EC2>
+    <PkgAWSSDK_AppConfig Condition=" '$(PkgAWSSDK_AppConfig)' == '' ">C:\Users\m1011226\.nuget\packages\awssdk.appconfig\3.7.0.52</PkgAWSSDK_AppConfig>
   </PropertyGroup>
 </Project>
