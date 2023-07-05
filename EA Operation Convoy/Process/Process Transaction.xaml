@@ -114,7 +114,6 @@
       <AssemblyReference>Pop Ups</AssemblyReference>
       <AssemblyReference>UiPath.AmazonWebServices</AssemblyReference>
       <AssemblyReference>Logging</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -483,7 +482,7 @@
                                   <InArgument x:TypeArguments="x:String">[strBusinessName.Replace("-","")]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <If Condition="[strBusinessName.Contains(&quot;Director&quot;)]" DisplayName="Check Whether strBusinessName contains Director" sap:VirtualizedContainerService.HintSize="876,812" sap2010:WorkflowViewState.IdRef="If_21">
+                              <If Condition="[strBusinessName.Contains(&quot;Director&quot;)]" DisplayName="Check Whether strBusinessName contains Director" sap:VirtualizedContainerService.HintSize="876,772" sap2010:WorkflowViewState.IdRef="If_21">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -619,7 +618,7 @@
                                     <InArgument x:TypeArguments="x:String">[strBusinessName.Split(" "c)(0)]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <If Condition="[(strFirstName.Count = 1) or (strFirstName.Contains(&quot;&amp;&quot;)) or (strFirstName.Contains(&quot;and&quot;))]" DisplayName="Count characters and check whether name contains &amp;" sap:VirtualizedContainerService.HintSize="562,832" sap2010:WorkflowViewState.IdRef="If_25">
+                                <If Condition="[(strFirstName.Count = 1) or (strFirstName.Contains(&quot;&amp;&quot;)) or (strFirstName.Contains(&quot;and&quot;))]" DisplayName="Count characters and check whether name contains &amp;" sap:VirtualizedContainerService.HintSize="562,826" sap2010:WorkflowViewState.IdRef="If_25">
                                   <If.Then>
                                     <Sequence DisplayName="Get second part pf business name" sap:VirtualizedContainerService.HintSize="526,642" sap2010:WorkflowViewState.IdRef="Sequence_186">
                                       <sap:WorkflowViewStateService.ViewState>
@@ -781,15 +780,15 @@
                             </Catch>
                           </TryCatch.Catches>
                         </TryCatch>
-                        <TryCatch x:Key="OH" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="956,52" sap2010:WorkflowViewState.IdRef="TryCatch_15">
+                        <TryCatch x:Key="OH" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="956,4852" sap2010:WorkflowViewState.IdRef="TryCatch_15">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="918,4839" sap2010:WorkflowViewState.IdRef="Sequence_195">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="918,4620" sap2010:WorkflowViewState.IdRef="Sequence_195">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumData" />
                                 <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="enumPostCode" />
@@ -837,7 +836,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:Matches>
-                              <TryCatch DisplayName="Try pulling Application Data" sap:VirtualizedContainerService.HintSize="876,695" sap2010:WorkflowViewState.IdRef="TryCatch_14">
+                              <TryCatch DisplayName="Try pulling Application Data" sap:VirtualizedContainerService.HintSize="876,292" sap2010:WorkflowViewState.IdRef="TryCatch_14">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -855,7 +854,7 @@
                                   </Assign>
                                 </TryCatch.Try>
                                 <TryCatch.Catches>
-                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,321" sap2010:WorkflowViewState.IdRef="Catch`1_14">
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_14">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -866,7 +865,7 @@
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Pull Application Data" sap:VirtualizedContainerService.HintSize="376,251" sap2010:WorkflowViewState.IdRef="Sequence_191">
+                                      <Sequence DisplayName="Pull Application Data" sap:VirtualizedContainerService.HintSize="376,249" sap2010:WorkflowViewState.IdRef="Sequence_191">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -886,7 +885,7 @@
                                   </Catch>
                                 </TryCatch.Catches>
                               </TryCatch>
-                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="876,61" sap2010:WorkflowViewState.IdRef="WriteLine_23" Text="[strData]" />
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="876,62" sap2010:WorkflowViewState.IdRef="WriteLine_23" Text="[strData]" />
                               <ui:Matches BuilderPattern="(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(Director)|(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(-)" DisplayName="Assign MetaData - First Name" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_20" Input="[strData]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(Director)|(?=((OF)([0-9]{7}) R-)|((OF)([0-9]{7}) SI-)|((OF)([0-9]{7}) SN-)).*(-)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?=((OH)([0-9]{7}) R-)|((OH)([0-9]{7}) SI-)|((OH)([0-9]{7}) SN-)).*(Director)|(?=((OH)([0-9]{7}) R-)|((OH)([0-9]{7}) SI-)|((OH)([0-9]{7}) SN-)).*(-)" RegexOption="IgnoreCase, Compiled" Result="[enumFirstName]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -918,7 +917,7 @@
                                   <InArgument x:TypeArguments="x:String">[strBusinessName.Replace("-","")]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <If Condition="[strBusinessName.Contains(&quot;Director&quot;)]" DisplayName="Check Whether strBusinessName contains Director" sap:VirtualizedContainerService.HintSize="876,810" sap2010:WorkflowViewState.IdRef="If_29">
+                              <If Condition="[strBusinessName.Contains(&quot;Director&quot;)]" DisplayName="Check Whether strBusinessName contains Director" sap:VirtualizedContainerService.HintSize="876,812" sap2010:WorkflowViewState.IdRef="If_29">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -993,7 +992,7 @@
                                   </Sequence>
                                 </If.Else>
                               </If>
-                              <If Condition="[strBusinessName.ToLower.Contains(&quot;ltd&quot;)]" DisplayName="Check whether strBusinessName contains ltd" sap:VirtualizedContainerService.HintSize="876,376" sap2010:WorkflowViewState.IdRef="If_31">
+                              <If Condition="[strBusinessName.ToLower.Contains(&quot;ltd&quot;)]" DisplayName="Check whether strBusinessName contains ltd" sap:VirtualizedContainerService.HintSize="876,380" sap2010:WorkflowViewState.IdRef="If_31">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1010,7 +1009,7 @@
                                   </Assign>
                                 </If.Then>
                                 <If.Else>
-                                  <If Condition="[strBusinessName.ToLower.Contains(&quot;limited&quot;)]" DisplayName="Check whether strBusinessName contains limited" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_30">
+                                  <If Condition="[strBusinessName.ToLower.Contains(&quot;limited&quot;)]" DisplayName="Check whether strBusinessName contains limited" sap:VirtualizedContainerService.HintSize="569,220" sap2010:WorkflowViewState.IdRef="If_30">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1039,8 +1038,8 @@
                                   </If>
                                 </If.Else>
                               </If>
-                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="876,61" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="[strBusinessName]" />
-                              <Sequence DisplayName="Check for &amp; and whether strBusinessName contains initials" sap:VirtualizedContainerService.HintSize="876,1018" sap2010:WorkflowViewState.IdRef="Sequence_194">
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="876,62" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="[strBusinessName]" />
+                              <Sequence DisplayName="Check for &amp; and whether strBusinessName contains initials" sap:VirtualizedContainerService.HintSize="876,1024" sap2010:WorkflowViewState.IdRef="Sequence_194">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1054,9 +1053,9 @@
                                     <InArgument x:TypeArguments="x:String">[strBusinessName.Split(" "c)(0)]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <If Condition="[(strFirstName.Count = 1) or (strFirstName.Contains(&quot;&amp;&quot;)) or (strFirstName.Contains(&quot;and&quot;))]" DisplayName="Count characters and check whether name contains &amp;" sap:VirtualizedContainerService.HintSize="562,826" sap2010:WorkflowViewState.IdRef="If_33">
+                                <If Condition="[(strFirstName.Count = 1) or (strFirstName.Contains(&quot;&amp;&quot;)) or (strFirstName.Contains(&quot;and&quot;))]" DisplayName="Count characters and check whether name contains &amp;" sap:VirtualizedContainerService.HintSize="562,832" sap2010:WorkflowViewState.IdRef="If_33">
                                   <If.Then>
-                                    <Sequence DisplayName="Get second part pf business name" sap:VirtualizedContainerService.HintSize="526,639" sap2010:WorkflowViewState.IdRef="Sequence_193">
+                                    <Sequence DisplayName="Get second part pf business name" sap:VirtualizedContainerService.HintSize="526,642" sap2010:WorkflowViewState.IdRef="Sequence_193">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1086,7 +1085,7 @@
                                           <InArgument x:TypeArguments="x:String">[strFirstName +" " + strFirstName1]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <If Condition="[(strFirstName.Contains(&quot;&amp;&quot;)) or (strFirstName.Contains(&quot;and&quot;)) or (strFirstName.Replace(&quot; &quot;,&quot;&quot;).count = 2)]" DisplayName="Count characters and check whether name contains &amp;" sap:VirtualizedContainerService.HintSize="484,247" sap2010:WorkflowViewState.IdRef="If_32">
+                                      <If Condition="[(strFirstName.Contains(&quot;&amp;&quot;)) or (strFirstName.Contains(&quot;and&quot;)) or (strFirstName.Replace(&quot; &quot;,&quot;&quot;).count = 2)]" DisplayName="Count characters and check whether name contains &amp;" sap:VirtualizedContainerService.HintSize="484,250" sap2010:WorkflowViewState.IdRef="If_32">
                                         <If.Then>
                                           <Assign DisplayName="Assign full business name to strFirstName" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_211">
                                             <Assign.To>
@@ -1103,21 +1102,32 @@
                                 </If>
                               </Sequence>
                               <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="876,62" sap2010:WorkflowViewState.IdRef="WriteLine_25" Text="[strFirstName]" />
-                              <ui:Matches BuilderPattern="(?=Operating Centre).*(Authorisation)" DisplayName="Refine Data for PostCode Search" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_21" Input="[strData]" IsBuilderTabModified="False" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?=Operating Centre).*(Authorisation)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?=Operating Centre).*(Authorisation)" RegexOption="IgnoreCase, Compiled" Result="[enumData]">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </ui:Matches>
-                              <Assign DisplayName="Assign enumData to strData" sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_212">
-                                <Assign.To>
-                                  <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
-                                </Assign.To>
-                                <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
-                                </Assign.Value>
-                              </Assign>
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="876,329" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,251" sap2010:WorkflowViewState.IdRef="Sequence_203">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:Matches BuilderPattern="(?=Operating Centre).*(Authorisation)" DisplayName="Refine Data for PostCode Search" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_21" Input="[strData]" IsBuilderTabModified="False" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?=Operating Centre).*(Authorisation)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?=Operating Centre).*(Authorisation)" RegexOption="IgnoreCase, Compiled" Result="[enumData]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:Matches>
+                                    <Assign DisplayName="Assign enumData to strData" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_212">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[strData]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[enumData(0).value]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                              </ui:CommentOut>
                               <ui:Matches BuilderPattern="([A-Z][A-HJ-Y]?\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})" DisplayName="Assign MetaData - Postcode" sap:VirtualizedContainerService.HintSize="876,59" sap2010:WorkflowViewState.IdRef="Matches_22" Input="[strData]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;([A-Z][A-HJ-Y]?\\d[A-Z\\d]? ?\\d[A-Z]{2}|GIR ?0A{2})&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="([A-Z][A-HJ-Y]?\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})" RegexOption="IgnoreCase, Compiled" Result="[enumPostCode]" />
                               <Assign DisplayName="Assign enumPostCode to arrPostcode" sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="Assign_213">
                                 <Assign.To>
@@ -1139,10 +1149,10 @@
                             </Sequence>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="922,874" sap2010:WorkflowViewState.IdRef="Catch`1_15">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="922,22" sap2010:WorkflowViewState.IdRef="Catch`1_15">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -1150,7 +1160,7 @@
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <Sequence sap:VirtualizedContainerService.HintSize="476,805" sap2010:WorkflowViewState.IdRef="Sequence_197">
+                                <Sequence sap:VirtualizedContainerService.HintSize="476,784" sap2010:WorkflowViewState.IdRef="Sequence_197">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="strApplicationRef" />
                                     <Variable x:TypeArguments="x:String" Name="strErrorMessage" />
@@ -1176,7 +1186,7 @@
                                       <InArgument x:TypeArguments="x:String">["Unable to Pull Metadata - Please complete Manual Search"]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strApplicationRef,strErrorMessage}]" DataTable="[dtMetaDataErrors]" DisplayName="Add Data Row - Error MetaData" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="AddDataRow_33" />
+                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strApplicationRef,strErrorMessage}]" DataTable="[dtMetaDataErrors]" DisplayName="Add Data Row - Error MetaData" sap:VirtualizedContainerService.HintSize="434,188" sap2010:WorkflowViewState.IdRef="AddDataRow_33" />
                                   <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_26" InstanceCachePeriod="3000" WorkbookPath="[IN_FolderPath + io_Config(&quot;Results SpreadSheet&quot;).ToString + &quot;.xlsx&quot;]">
                                     <ui:ExcelApplicationScope.Body>
                                       <ActivityAction x:TypeArguments="ui:WorkbookApplication">
